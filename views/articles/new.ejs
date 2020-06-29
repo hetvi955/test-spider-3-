@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>MY BLOG</title>
+</head>
+<body style="background-color: black;">
+    <div class="container"> 
+        <h2 style="margin:2%;
+        font-weight: 200;
+        color:white; 
+        "class="mb-1">
+            New Article
+        </h2>
+
+        <p style="opacity:60%;
+        font-weight: 100;
+        color:white; 
+        ">(* marked fields are mandatory.)<p>
+           
+        <form action="/articles" method='POST'>
+            <%- include('_form_fields') %>
+        </form>
+    </div>  
+</body>
+</html>
